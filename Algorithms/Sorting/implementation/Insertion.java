@@ -1,9 +1,9 @@
-package Algorithms.Sorting;
+package Algorithms.Sorting.implementation;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Bubble {
+public class Insertion {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
@@ -12,21 +12,23 @@ public class Bubble {
         for (int i = 0; i < N;i++){
             arr[i] = input.nextInt();
         }
-        System.out.println(Arrays.toString(bubbleSort(arr)));
-    }
 
+        System.out.println(Arrays.toString(selectionSort(arr)));
+
+    }
     // Time Complexity : O(n^2)
     // Space Complexity : O(1)
-    public static int[] bubbleSort(int[] arr){
+    public static int[] selectionSort(int[] arr){
         int n = arr.length;
-        for (int i = 0; i < n;i++){
-            for (int j = i +1 ; j < n ;j++){
-                if (arr[i] > arr[j]){
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
+        for (int i = 1; i < n; i++){
+            int key = arr[i];
+            int j = i - 1;
+
+            while (j>= 0 && arr[j] > key){
+                arr[j + 1] = arr[j];
+                j = j - 1;
             }
+            arr[j + 1] = key;
         }
         return arr;
     }
