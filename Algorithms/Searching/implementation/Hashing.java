@@ -1,4 +1,4 @@
-package Algorithms.Searching;
+package Algorithms.Searching.implementation;
 
 import java.util.Hashtable;
 

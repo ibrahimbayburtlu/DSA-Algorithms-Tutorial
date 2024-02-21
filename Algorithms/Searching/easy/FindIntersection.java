@@ -1,7 +1,6 @@
 package Algorithms.Searching.easy;
 
 import java.util.HashSet;
-import java.util.Scanner;
 
 /*
 Given three Sorted arrays in non-decreasing order, print all common elements in these arrays.

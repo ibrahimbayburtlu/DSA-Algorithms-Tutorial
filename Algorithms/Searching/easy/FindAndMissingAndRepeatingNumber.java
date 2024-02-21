@@ -1,6 +1,5 @@
 package Algorithms.Searching.easy;
 
-import java.util.Hashtable;
 import java.util.Scanner;
 /*
 Given an unsorted array of size n. Array elements are in the range of 1 to n.
