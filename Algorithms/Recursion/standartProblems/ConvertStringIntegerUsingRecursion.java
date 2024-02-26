@@ -9,7 +9,7 @@ Examples:
 Input: str = “1234”
 Output: 1234
 Input: str = “0145”
-Output: 145 
+Output: 145
  */
 public class ConvertStringIntegerUsingRecursion {
     public static void main(String[] args) {
